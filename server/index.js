@@ -27,3 +27,6 @@ app.use("/api", routes);
 app.listen(PORT, () => {
   console.log(`Servidor rodando em http://localhost:${PORT}`);
 });
+
+// Exportar para o Vercel
+export default app;

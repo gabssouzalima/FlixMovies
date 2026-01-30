@@ -10,7 +10,7 @@ router.get("/search", async (req, res) => {
   }
 
   const apiKey = process.env.TMDB_KEY;
-  if (!apiKey || apiKey === "chave_inexistente") {
+  if (!apiKey || apiKey === "sua_chave_aqui") {
     return res.status(500).json({ error: "Chave da API TMDB não configurada no servidor" });
   }
 
