@@ -25,7 +25,6 @@ router.get("/search", async (req, res) => {
     }
 
     const data = await response.json();
-    // Retornamos apenas os resultados para simplificar o frontend
     res.json(data.results || []);
   } catch (error) {
     console.error("Erro ao buscar filmes:", error);
